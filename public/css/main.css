@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+}
+
+.background {
+    background-color: steelblue;
+    height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar-header {
+    line-height: 50px;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.title {
+    color: ghostwhite;
+    font-size: 18px;
+}
+
+.user-icon {
+    font-size: 20px;
+}
+
+.chat-components {
+    margin: 0;
+}
+
+.chat-components > div {
+    margin-left: 2%;
+    padding: 0;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 5px 15px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 5px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.chat-components > div > div {
+    margin:0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #ededed;
+    height: calc(100vh - 92px);
+    margin-left: 2%;
+    padding: 0;
+}
+
+.nav-sidebar > li {
+    font-size: 14px;
+}
+
+.nav-sidebar > li:not(.active) > a:hover, .nav-sidebar > li:not(.active) > a:focus {
+    background-color: transparent;
+}
+
+.nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+    background-color: #dddddd;
+}
+
+.nav-sidebar > .active {
+    background-color: #dddddd;
+}
+
+.chatroom {
+    background-color: ghostwhite;
+    height: calc(100vh - 92px);
+}
+
+.chat-history {
+    height: calc(100% - 54px);
+    border-bottom: 1px solid steelblue;
+}
+
+.filter-row {
+    margin: 0;
+    background-color: #eeeeee;
+    height: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.history-row {
+    margin: 0;
+    height: calc(100% - 50px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+}
+
+.message-block-container {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.message-block:not(.from-me) {
+    height: 50px;
+    width: 100%;
+}
+
+.message-block.from-me {
+    height: 50px;
+    float: right;
+}
+
+.message-block .profile-photo {
+    display: inline-block;
+    font-size: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 50px;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.profile-photo {
+    float: left;
+    display: inline-block;
+    font-size: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 50px;
+}
+
+.photo {
+    background-image: url('../img/profile_placeholder.jpg');
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.message-block.from-me .profile-photo {
+    display: none;
+}
+
+.message {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #fff;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #e6eff7;
+}
+
+.message-block.from-me .message {
+    background-color: #cfe6f9;
+}
+
+.message-text {
+    height: 30px;
+    line-height: 38px;
+    font-size: 18px;
+}
+
+.message-block .sender {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.message-block.from-me .sender {
+    float: right;
+}
+
+.chat-input {
+    height: 54px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.chat-input input {
+    width: calc(100% - 165px);
+    display: inline-block;
+}
+
+.function-icon {
+    font-size: 20px;
+}
+
+/* Loader CSS */
+
+.loader-container {
+    width:100%;
+    position: absolute;
+    top: 25%;
+    left: -5%;
+}
+
+.loader {
+  color: #4682b4;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease;
+  animation: load6 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
